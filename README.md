@@ -13,7 +13,7 @@ The project is named after Madie to acknowledge her UI design. My contribution i
 1. [Run the project locally](#run-locally) and press **Play**. The player starts paused so that playback begins with a user action.
 2. Use **Next** and **Previous** to move through the 14-song playlist. Navigation wraps at both ends and keeps the current playing or paused state.
 3. Open **Menu** and choose a track from another season. For example, **Day Dream** uses the autumn theme and **Solas** uses winter. The artwork and controls change together.
-4. Resize the browser to a phone width. The player keeps the illustrated layout, with controls that remain usable by touch.
+4. Resize the browser to a phone width, then try a short landscape window. The portrait card fits the available height, and the landscape layout puts the artwork beside the controls.
 5. Try the same flow with **Tab**, **Enter**, and **Space**. Close the song menu with **Escape**; focus returns to Menu.
 
 For a code review, start with [index.html](index.html), then the playlist and playback functions in [songs/index.js](songs/index.js), the layout in [index.css](index.css), and the behavior checks in [tests/player.spec.js](tests/player.spec.js).
@@ -23,7 +23,7 @@ For a code review, start with [index.html](index.html), then the playlist and pl
 | Frontend skill | Where it appears |
 | --- | --- |
 | Translating a UI design into code | Illustrated controls, layered cover artwork, gradients, and four coordinated seasonal appearances |
-| Responsive CSS | A fluid player width, proportional layout, container-relative sizing, and narrow-screen title handling |
+| Responsive CSS | A flowing grid, height-aware portrait sizing, a compact landscape layout, and titles that wrap safely with fallback fonts |
 | DOM and event handling | Song selection, control updates, active playlist items, and theme changes without reloading the page |
 | Browser audio APIs | One audio element, explicit playback, track transitions, automatic advancement, and error recovery |
 | Asynchronous state management | Playback intent and request IDs prevent an old rejected play promise from resetting a newer track |
@@ -36,7 +36,7 @@ For a code review, start with [index.html](index.html), then the playlist and pl
 - Play/pause, previous/next, and automatic advancement when a track ends.
 - A song menu that highlights the current selection.
 - Matching cover art, background, navigation icons, play/pause icons, borders, and gradients.
-- Responsive layout checked at 320, 375, 768, and 1440 pixels wide.
+- Portrait and landscape layouts checked across 11 window sizes, from 280×653 to 1440×900, with the design font and fallback fonts.
 - Messages for blocked playback and missing or unplayable audio.
 - Visible credit for the designer and frontend developer.
 
@@ -65,9 +65,11 @@ Open **http://127.0.0.1:4173**. Stop the server with **Ctrl+C**.
 The application itself has no JavaScript framework or runtime package dependencies. The npm packages provide a local static server and browser tests. Google Fonts supplies the Meow Script typeface; the stylesheet includes a cursive fallback.
 
 <details>
-<summary>Phone preview</summary>
+<summary>Phone previews: portrait and landscape</summary>
 
 <img src="docs/screenshots/player-mobile.png" alt="The complete seasonal player and design credit at a 375 pixel phone width" width="320">
+
+<img src="docs/screenshots/player-landscape.png" alt="The compact landscape layout with cover artwork beside the playback controls" width="640">
 
 </details>
 
@@ -79,7 +81,7 @@ One `HTMLAudioElement` handles the playlist. `isPlaybackRequested` records wheth
 
 Previous and next use wraparound indices. The audio element's `ended` event selects the next track and starts it. Selecting a song from Menu preserves the current playback intent. Selecting the already active song leaves its playback position alone.
 
-The player uses a fixed aspect ratio and proportional placement to retain the design as its width changes. A native `<dialog>` supplies modal focus behavior and Escape handling; song titles and playback messages use live status regions.
+The player uses CSS Grid so the song title, cover, and controls occupy separate layout areas. The portrait card retains the original proportions and sizes itself using both the available width and window height. Short landscape windows use a two-column arrangement with the cover beside the controls. Titles can wrap when the design font is unavailable without overlapping the artwork. A native `<dialog>` supplies modal focus behavior and Escape handling; song titles and playback messages use live status regions.
 
 ## Project structure
 
@@ -115,7 +117,7 @@ The browser suite covers:
 - Blocked playback, a missing audio file, and recovery.
 - Rejected promises from an obsolete or cancelled playback request.
 - Every configured asset path, audio metadata decoding, and image decoding.
-- Layout bounds, title/cover overlap, and minimum 44px control targets at four viewport widths.
+- Horizontal and vertical layout bounds, content overlap, and minimum 44px control targets at 11 portrait and landscape window sizes, both with and without Google Fonts.
 
 GitHub Actions runs the syntax check and browser suite for pushes and pull requests. Automated browser coverage uses Chromium; it does not establish identical behavior across every browser or device.
 
@@ -123,8 +125,8 @@ GitHub Actions runs the syntax check and browser suite for pushes and pull reque
 
 | Finding | Change |
 | --- | --- |
-| The fixed-width player extended beyond phone viewports | Replaced transform-based sizing with a fluid, proportional layout and added viewport metadata |
-| Long song titles could collide with the cover on narrow screens | Adjusted the title width, padding, and type size; checked every song at each test width |
+| The fixed-width player extended beyond phone viewports, and controls fell below short windows | Added a fluid grid, height-aware portrait sizing, a compact landscape arrangement, and viewport metadata |
+| Long song titles could collide with the cover, including when Google Fonts failed | Gave titles their own grid row so wrapping adjusts the cover space; checked every song with both font-loading outcomes |
 | Images and divs acted as controls without keyboard access | Added native buttons, accessible names, and visible focus indicators |
 | Menu was a visual label with no action | Connected it to a keyboard-accessible song dialog |
 | Playback failures had no explanation | Added status messages and a usable recovery path |

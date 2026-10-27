@@ -176,33 +176,60 @@ test('every track decodes and loads its matching artwork and seasonal controls',
     expect(errors).toEqual([]);
 });
 
-for (const width of [320, 375, 768, 1440]) {
-    test(`keeps every song title and the controls inside a ${width}px viewport`, async ({ page }) => {
-        await page.setViewportSize({ width, height: 1000 });
-        await page.evaluate(() => document.fonts.ready);
-        for (let index = 0; index < 14; index++) {
-            const bounds = await page.evaluate(() => {
-                const title = document.querySelector('#music-info-container');
-                const cover = document.querySelector('#music-cover-container');
-                const targets = ['#music-player', '#music-info-container', '#previous-control-top', '#next-control-top', '#play-pause-control', '#menu-control-bottom'];
-                return {
-                    overflow: document.documentElement.scrollWidth > innerWidth,
-                    titleOverlapsCover: title.getBoundingClientRect().bottom > cover.getBoundingClientRect().top,
-                    fits: targets.every(selector => {
-                        const rect = document.querySelector(selector).getBoundingClientRect();
-                        return rect.left >= 0 && rect.right <= innerWidth;
-                    }),
-                    touchTargets: [...document.querySelectorAll('#controls-container button')].every(button => {
-                        const rect = button.getBoundingClientRect();
-                        return rect.width >= 44 && rect.height >= 44;
-                    }),
-                };
-            });
-            expect(bounds).toEqual({ overflow: false, titleOverlapsCover: false, fits: true, touchTargets: true });
-            await page.getByRole('button', { name: 'Next song' }).click();
-        }
-        await page.getByRole('button', { name: 'Menu', exact: true }).click();
-        await expect(page.getByRole('dialog')).toBeInViewport();
-        await page.getByRole('button', { name: 'Close song menu' }).click();
-    });
+const viewports = [
+    { width: 280, height: 653 },
+    { width: 320, height: 568 },
+    { width: 375, height: 667 },
+    { width: 480, height: 320 },
+    { width: 568, height: 320 },
+    { width: 667, height: 375 },
+    { width: 844, height: 390 },
+    { width: 768, height: 1024 },
+    { width: 1024, height: 768 },
+    { width: 1280, height: 720 },
+    { width: 1440, height: 900 },
+];
+
+for (const viewport of viewports) {
+    for (const blockFont of [false, true]) {
+        const fontDescription = blockFont ? 'fallback fonts' : 'the design font';
+        test(`keeps every song usable at ${viewport.width}x${viewport.height} with ${fontDescription}`, async ({ page }) => {
+            if (blockFont) {
+                await page.route('https://fonts.googleapis.com/**', route => route.abort());
+                await page.reload();
+            }
+            await page.setViewportSize(viewport);
+            await page.evaluate(() => document.fonts.ready);
+            for (let index = 0; index < 14; index++) {
+                const bounds = await page.evaluate(() => {
+                    const rect = selector => document.querySelector(selector).getBoundingClientRect();
+                    const title = rect('#music-info-container');
+                    const cover = rect('#music-cover-container');
+                    const controls = rect('#controls-container');
+                    const intersects = (a, b) => a.left < b.right - 0.5 && a.right > b.left + 0.5
+                        && a.top < b.bottom - 0.5 && a.bottom > b.top + 0.5;
+                    const targets = ['#music-player', '#music-info-container', '#music-cover-container', '#controls-container', '#previous-control-top', '#next-control-top', '#play-pause-control', '#menu-control-bottom'];
+                    return {
+                        overflow: document.documentElement.scrollWidth > innerWidth,
+                        verticalOverflow: document.documentElement.scrollHeight > innerHeight,
+                        overlaps: intersects(title, cover) || intersects(title, controls) || intersects(cover, controls),
+                        fits: targets.every(selector => {
+                            const target = rect(selector);
+                            return target.left >= -0.5 && target.right <= innerWidth + 0.5
+                                && target.top >= -0.5 && target.bottom <= innerHeight + 0.5;
+                        }),
+                        touchTargets: [...document.querySelectorAll('#controls-container button')].every(button => {
+                            const target = button.getBoundingClientRect();
+                            return target.width >= 44 && target.height >= 44;
+                        }),
+                    };
+                });
+                expect(bounds, `Song ${index + 1}`).toEqual({ overflow: false, verticalOverflow: false, overlaps: false, fits: true, touchTargets: true });
+                await page.getByRole('button', { name: 'Next song' }).click();
+            }
+            await page.getByRole('button', { name: 'Menu', exact: true }).click();
+            await expect(page.getByRole('dialog')).toBeInViewport();
+            await page.getByRole('button', { name: 'Close song menu' }).click();
+        });
+    }
 }
