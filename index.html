@@ -1,58 +1,45 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A seasonal music player built with HTML, CSS, and JavaScript. UI design by Madie; frontend implementation by JustineVizco25.">
         <title>Madie Music Player</title>
+        <link rel="icon" href="data:,">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
-
-        <link rel = "stylesheet" href = "index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="index.css">
+        <script src="./songs/index.js" defer></script>
     </head>
-
     <body>
-        <div id = "main-container">
-            <div
-                id="music-info-container"
-                class="music-info-container">
-            </div>
-
+        <h1 class="visually-hidden">Madie Music Player</h1>
+        <main id="main-container" aria-label="Seasonal music player">
+            <div id="music-info-container" class="music-info-container" role="status" aria-live="polite"></div>
             <div id="music-player" class="music-player">
                 <img id="music-background" class="music-background" alt="">
-
                 <div id="music-cover-container" class="music-cover-container">
                     <div class="music-cover-frame">
-                        <img
-                            id="music-cover-photo"
-                            class="music-cover-photo"
-                            alt="">
+                        <img id="music-cover-photo" class="music-cover-photo" alt="">
                     </div>
                 </div>
-
-                <div id="controls-container" class="controls-container">
+                <div id="controls-container" class="controls-container" role="group" aria-label="Playback controls">
                     <div id="left-controls-side" class="left-controls-side">
-                        <div id="previous-control-top" class="previous-control-top">
+                        <button id="previous-control-top" class="previous-control-top" type="button" aria-label="Previous song">
                             <img id="previous-song-button" class="previous-song-button" alt="">
-                        </div>
+                        </button>
                         <div id="controls-section-divider" class="controls-section-divider"></div>
-                        <div id="menu-control-bottom" class="menu-control-bottom">
-                            Menu
-                        </div>
+                        <button id="menu-control-bottom" class="menu-control-bottom" type="button" aria-haspopup="dialog" aria-controls="playlist-dialog">Menu</button>
                     </div>
-
                     <div id="controls-middle-section" class="controls-middle-section">
-                        <img
-                            id="pause-button"
-                            class="pause-button"
-                            data-button-state="play"
-                            alt="">
+                        <button id="play-pause-control" type="button" aria-label="Play">
+                            <img id="pause-button" class="pause-button" data-button-state="play" alt="">
+                        </button>
                     </div>
-
                     <div id="right-controls-side" class="right-controls-side">
-                        <div id="next-control-top" class="next-control-top">
+                        <button id="next-control-top" class="next-control-top" type="button" aria-label="Next song">
                             <img id="next-song-button" class="next-song-button" alt="">
-                        </div>
+                        </button>
                         <div id="right-controls-section-divider" class="right-controls-section-divider"></div>
                         <div id="next-control-bottom" class="next-control-bottom">
                             <img id="decoration" class="decoration" alt="">
@@ -60,7 +47,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <script src = "./songs/index.js"></script>
+            <p id="playback-status" role="status" aria-live="polite"></p>
+        </main>
+        <dialog id="playlist-dialog" aria-labelledby="playlist-title">
+            <div class="playlist-heading">
+                <h2 id="playlist-title">Choose a song</h2>
+                <form method="dialog"><button type="submit" aria-label="Close song menu">Close</button></form>
+            </div>
+            <ol id="playlist"></ol>
+        </dialog>
+        <footer>UI design by Madie · Frontend by <a href="https://github.com/JustineVizco25">JustineVizco25</a></footer>
+        <noscript><p class="noscript-message">Please enable JavaScript to use the music player.</p></noscript>
     </body>
 </html>

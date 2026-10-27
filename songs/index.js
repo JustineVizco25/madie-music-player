@@ -24,11 +24,11 @@ const songs = [
         name: "Ballads at Sunset",
         artist: "Alej - ",
         audio: "./songs/Alej - Ballads at Sunset (Piano Version).mp3",
-        previous_button: "./icons /summer_pack/s_previous_button.png",
-        next_button: "./icons /summer_pack/s_next_button.png",
-        play_button: "./icons /summer_pack/s_play_button.png",
-        pause_button: "./icons /summer_pack/s_pause_button.png",
-        decoration: "./icons /summer_pack/s_deco.png",
+        previous_button: "./icons/summer_pack/s_previous_button.png",
+        next_button: "./icons/summer_pack/s_next_button.png",
+        play_button: "./icons/summer_pack/s_play_button.png",
+        pause_button: "./icons/summer_pack/s_pause_button.png",
+        decoration: "./icons/summer_pack/s_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 248, 222) 0%, rgb(248, 242, 224) 18%, rgb(235, 232, 225) 38%, rgb(220, 219, 224) 65%, rgb(207, 208, 220) 100%)",
@@ -48,11 +48,11 @@ const songs = [
         name: "Just Give Me One More Day",
         artist: "Alej - ",
         audio: "./songs/Alej - Just Give Me One More Day (Old Piano).mp3",
-        previous_button: "./icons /summer_pack/s_previous_button.png",
-        next_button: "./icons /summer_pack/s_next_button.png",
-        play_button: "./icons /summer_pack/s_play_button.png",
-        pause_button: "./icons /summer_pack/s_pause_button.png",
-        decoration: "./icons /summer_pack/s_deco.png",
+        previous_button: "./icons/summer_pack/s_previous_button.png",
+        next_button: "./icons/summer_pack/s_next_button.png",
+        play_button: "./icons/summer_pack/s_play_button.png",
+        pause_button: "./icons/summer_pack/s_pause_button.png",
+        decoration: "./icons/summer_pack/s_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 248, 222) 0%, rgb(248, 242, 224) 18%, rgb(235, 232, 225) 38%, rgb(220, 219, 224) 65%, rgb(207, 208, 220) 100%)",
@@ -72,11 +72,11 @@ const songs = [
         name: "Golden Hour",
         artist: "Jvke - ",
         audio: "./songs/Jvke - Golden Hour.mp3",
-        previous_button: "./icons /summer_pack/s_previous_button.png",
-        next_button: "./icons /summer_pack/s_next_button.png",
-        play_button: "./icons /summer_pack/s_play_button.png",
-        pause_button: "./icons /summer_pack/s_pause_button.png",
-        decoration: "./icons /summer_pack/s_deco.png",
+        previous_button: "./icons/summer_pack/s_previous_button.png",
+        next_button: "./icons/summer_pack/s_next_button.png",
+        play_button: "./icons/summer_pack/s_play_button.png",
+        pause_button: "./icons/summer_pack/s_pause_button.png",
+        decoration: "./icons/summer_pack/s_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(255, 247, 218) 0%, rgb(235, 231, 222) 35%, rgb(200, 207, 232) 72%, rgb(166, 178, 225) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 248, 222) 0%, rgb(248, 242, 224) 18%, rgb(235, 232, 225) 38%, rgb(220, 219, 224) 65%, rgb(207, 208, 220) 100%)",
@@ -98,11 +98,11 @@ const songs = [
         name: "Day Dream",
         artist: "Nowt - ",
         audio: "./songs/Nowt - daydream.mp3",
-        previous_button: "./icons /autumn_pack/au_previous_button.png",
-        next_button: "./icons /autumn_pack/au_next_button.png",
-        play_button: "./icons /autumn_pack/au_play_button.png",
-        pause_button: "./icons /autumn_pack/au_pause_button.png",
-        decoration: "./icons /autumn_pack/au_deco.png",
+        previous_button: "./icons/autumn_pack/au_previous_button.png",
+        next_button: "./icons/autumn_pack/au_next_button.png",
+        play_button: "./icons/autumn_pack/au_play_button.png",
+        pause_button: "./icons/autumn_pack/au_pause_button.png",
+        decoration: "./icons/autumn_pack/au_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 248, 222) 0%, rgb(239, 194, 153) 45%, rgb(219, 91, 27) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(219, 91, 27) 0%, rgb(239, 194, 153) 55%, rgb(255, 248, 222) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 252, 225) 0%, rgb(255, 247, 205) 18%, rgb(254, 235, 162) 38%, rgb(250, 217, 112) 65%, rgb(245, 190, 63) 100%)",
@@ -122,11 +122,11 @@ const songs = [
         name: "Cordelia",
         artist: "Juan Arenosa - ",
         audio: "./songs/Juan Arenosa - Cordelia.mp3",
-        previous_button: "./icons /autumn_pack/au_previous_button.png",
-        next_button: "./icons /autumn_pack/au_next_button.png",
-        play_button: "./icons /autumn_pack/au_play_button.png",
-        pause_button: "./icons /autumn_pack/au_pause_button.png",
-        decoration: "./icons /autumn_pack/au_deco.png",
+        previous_button: "./icons/autumn_pack/au_previous_button.png",
+        next_button: "./icons/autumn_pack/au_next_button.png",
+        play_button: "./icons/autumn_pack/au_play_button.png",
+        pause_button: "./icons/autumn_pack/au_pause_button.png",
+        decoration: "./icons/autumn_pack/au_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 248, 222) 0%, rgb(239, 194, 153) 45%, rgb(219, 91, 27) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(219, 91, 27) 0%, rgb(239, 194, 153) 55%, rgb(255, 248, 222) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 252, 225) 0%, rgb(255, 247, 205) 18%, rgb(254, 235, 162) 38%, rgb(250, 217, 112) 65%, rgb(245, 190, 63) 100%)",
@@ -146,11 +146,11 @@ const songs = [
         name: "Flashing Memories",
         artist: "Juan Arenosa - ",
         audio: "./songs/Juan Arenosa - Flashing Memories.mp3",
-        previous_button: "./icons /autumn_pack/au_previous_button.png",
-        next_button: "./icons /autumn_pack/au_next_button.png",
-        play_button: "./icons /autumn_pack/au_play_button.png",
-        pause_button: "./icons /autumn_pack/au_pause_button.png",
-        decoration: "./icons /autumn_pack/au_deco.png",
+        previous_button: "./icons/autumn_pack/au_previous_button.png",
+        next_button: "./icons/autumn_pack/au_next_button.png",
+        play_button: "./icons/autumn_pack/au_play_button.png",
+        pause_button: "./icons/autumn_pack/au_pause_button.png",
+        decoration: "./icons/autumn_pack/au_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(255, 248, 222) 0%, rgb(239, 194, 153) 45%, rgb(219, 91, 27) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(219, 91, 27) 0%, rgb(239, 194, 153) 55%, rgb(255, 248, 222) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(255, 252, 225) 0%, rgb(255, 247, 205) 18%, rgb(254, 235, 162) 38%, rgb(250, 217, 112) 65%, rgb(245, 190, 63) 100%)",
@@ -171,11 +171,11 @@ const songs = [
         name: "Rumination",
         artist: "BAANDIT - ",
         audio: "./songs/BAANDIT - rumination.mp3",
-        previous_button: "./icons /spring_pack/sp_previous_button.png",
-        next_button: "./icons /spring_pack/sp_next_button.png",
-        play_button: "./icons /spring_pack/sp_play_button.png",
-        pause_button: "./icons /spring_pack/sp_pause_button.png",
-        decoration: "./icons /spring_pack/sp_deco.png",
+        previous_button: "./icons/spring_pack/sp_previous_button.png",
+        next_button: "./icons/spring_pack/sp_next_button.png",
+        play_button: "./icons/spring_pack/sp_play_button.png",
+        pause_button: "./icons/spring_pack/sp_pause_button.png",
+        decoration: "./icons/spring_pack/sp_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(247, 224, 235) 0%, rgb(207, 199, 226) 42%, rgb(137, 151, 198) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(137, 151, 198) 0%, rgb(207, 199, 226) 58%, rgb(247, 224, 235) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(247, 228, 237) 0%, rgb(244, 221, 234) 18%, rgb(238, 211, 230) 38%, rgb(229, 216, 238) 65%, rgb(219, 214, 236) 100%)",
@@ -195,11 +195,11 @@ const songs = [
         name: "Dearly Beloved",
         artist: "Yoko Shimomura - ",
         audio: "./songs/Yoko Shimomura - Dearly Beloved.mp3",
-        previous_button: "./icons /spring_pack/sp_previous_button.png",
-        next_button: "./icons /spring_pack/sp_next_button.png",
-        play_button: "./icons /spring_pack/sp_play_button.png",
-        pause_button: "./icons /spring_pack/sp_pause_button.png",
-        decoration: "./icons /spring_pack/sp_deco.png",
+        previous_button: "./icons/spring_pack/sp_previous_button.png",
+        next_button: "./icons/spring_pack/sp_next_button.png",
+        play_button: "./icons/spring_pack/sp_play_button.png",
+        pause_button: "./icons/spring_pack/sp_pause_button.png",
+        decoration: "./icons/spring_pack/sp_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(247, 224, 235) 0%, rgb(207, 199, 226) 42%, rgb(137, 151, 198) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(137, 151, 198) 0%, rgb(207, 199, 226) 58%, rgb(247, 224, 235) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(247, 228, 237) 0%, rgb(244, 221, 234) 18%, rgb(238, 211, 230) 38%, rgb(229, 216, 238) 65%, rgb(219, 214, 236) 100%)",
@@ -219,11 +219,11 @@ const songs = [
         name: "Ethereal",
         artist: "Txmy - ",
         audio: "./songs/Txmy - Ethereal.mp3",
-        previous_button: "./icons /spring_pack/sp_previous_button.png",
-        next_button: "./icons /spring_pack/sp_next_button.png",
-        play_button: "./icons /spring_pack/sp_play_button.png",
-        pause_button: "./icons /spring_pack/sp_pause_button.png",
-        decoration: "./icons /spring_pack/sp_deco.png",
+        previous_button: "./icons/spring_pack/sp_previous_button.png",
+        next_button: "./icons/spring_pack/sp_next_button.png",
+        play_button: "./icons/spring_pack/sp_play_button.png",
+        pause_button: "./icons/spring_pack/sp_pause_button.png",
+        decoration: "./icons/spring_pack/sp_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(247, 224, 235) 0%, rgb(207, 199, 226) 42%, rgb(137, 151, 198) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(137, 151, 198) 0%, rgb(207, 199, 226) 58%, rgb(247, 224, 235) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(247, 228, 237) 0%, rgb(244, 221, 234) 18%, rgb(238, 211, 230) 38%, rgb(229, 216, 238) 65%, rgb(219, 214, 236) 100%)",
@@ -243,11 +243,11 @@ const songs = [
         name: "If I am With You",
         artist: "照井順政 - ",
         audio: "./songs/照井順政- If I am With You.mp3",
-        previous_button: "./icons /spring_pack/sp_previous_button.png",
-        next_button: "./icons /spring_pack/sp_next_button.png",
-        play_button: "./icons /spring_pack/sp_play_button.png",
-        pause_button: "./icons /spring_pack/sp_pause_button.png",
-        decoration: "./icons /spring_pack/sp_deco.png",
+        previous_button: "./icons/spring_pack/sp_previous_button.png",
+        next_button: "./icons/spring_pack/sp_next_button.png",
+        play_button: "./icons/spring_pack/sp_play_button.png",
+        pause_button: "./icons/spring_pack/sp_pause_button.png",
+        decoration: "./icons/spring_pack/sp_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(247, 224, 235) 0%, rgb(207, 199, 226) 42%, rgb(137, 151, 198) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(137, 151, 198) 0%, rgb(207, 199, 226) 58%, rgb(247, 224, 235) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgb(247, 228, 237) 0%, rgb(244, 221, 234) 18%, rgb(238, 211, 230) 38%, rgb(229, 216, 238) 65%, rgb(219, 214, 236) 100%)",
@@ -268,11 +268,11 @@ const songs = [
         name: "mv3",
         artist: "Auror - ",
         audio: "./songs/Auror - mv3.mp3",
-        previous_button: "./icons /winter_pack/w_previous_button.png",
-        next_button: "./icons /winter_pack/w_next_button.png",
-        play_button: "./icons /winter_pack/w_play_button.png",
-        pause_button: "./icons /winter_pack/w_pause_button.png",
-        decoration: "./icons /winter_pack/w_deco.png",
+        previous_button: "./icons/winter_pack/w_previous_button.png",
+        next_button: "./icons/winter_pack/w_next_button.png",
+        play_button: "./icons/winter_pack/w_play_button.png",
+        pause_button: "./icons/winter_pack/w_pause_button.png",
+        decoration: "./icons/winter_pack/w_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(229, 244, 250) 0%, rgb(166, 205, 226) 42%, rgb(71, 138, 187) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(71, 138, 187) 0%, rgb(166, 205, 226) 58%, rgb(229, 244, 250) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgba(202, 225, 241, 0.92) 0%, rgba(119, 171, 213, 0.96) 45%, rgba(77, 133, 184, 0.88) 80%, rgba(255, 255, 255, 0.6) 100%)",
@@ -291,11 +291,11 @@ const songs = [
         name: "Solas",
         artist: "Jamie Duffy - ",
         audio: "./songs/Jamie Duffy - Solas.mp3",
-        previous_button: "./icons /winter_pack/w_previous_button.png",
-        next_button: "./icons /winter_pack/w_next_button.png",
-        play_button: "./icons /winter_pack/w_play_button.png",
-        pause_button: "./icons /winter_pack/w_pause_button.png",
-        decoration: "./icons /winter_pack/w_deco.png",
+        previous_button: "./icons/winter_pack/w_previous_button.png",
+        next_button: "./icons/winter_pack/w_next_button.png",
+        play_button: "./icons/winter_pack/w_play_button.png",
+        pause_button: "./icons/winter_pack/w_pause_button.png",
+        decoration: "./icons/winter_pack/w_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(229, 244, 250) 0%, rgb(166, 205, 226) 42%, rgb(71, 138, 187) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(71, 138, 187) 0%, rgb(166, 205, 226) 58%, rgb(229, 244, 250) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgba(202, 225, 241, 0.92) 0%, rgba(119, 171, 213, 0.96) 45%, rgba(77, 133, 184, 0.88) 80%, rgba(255, 255, 255, 0.6) 100%)",
@@ -314,11 +314,11 @@ const songs = [
         name: "Starry Night",
         artist: "Jordan Critz - ",
         audio: "./songs/Jordan Critz - Starry Night.mp3",
-        previous_button: "./icons /winter_pack/w_previous_button.png",
-        next_button: "./icons /winter_pack/w_next_button.png",
-        play_button: "./icons /winter_pack/w_play_button.png",
-        pause_button: "./icons /winter_pack/w_pause_button.png",
-        decoration: "./icons /winter_pack/w_deco.png",
+        previous_button: "./icons/winter_pack/w_previous_button.png",
+        next_button: "./icons/winter_pack/w_next_button.png",
+        play_button: "./icons/winter_pack/w_play_button.png",
+        pause_button: "./icons/winter_pack/w_pause_button.png",
+        decoration: "./icons/winter_pack/w_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(229, 244, 250) 0%, rgb(166, 205, 226) 42%, rgb(71, 138, 187) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(71, 138, 187) 0%, rgb(166, 205, 226) 58%, rgb(229, 244, 250) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgba(202, 225, 241, 0.92) 0%, rgba(119, 171, 213, 0.96) 45%, rgba(77, 133, 184, 0.88) 80%, rgba(255, 255, 255, 0.6) 100%)",
@@ -337,11 +337,11 @@ const songs = [
         name: "Dreaming of the Stars",
         artist: "Alej - ",
         audio: "./songs/Alej - Dreaming of the Stars.mp3",
-        previous_button: "./icons /winter_pack/w_previous_button.png",
-        next_button: "./icons /winter_pack/w_next_button.png",
-        play_button: "./icons /winter_pack/w_play_button.png",
-        pause_button: "./icons /winter_pack/w_pause_button.png",
-        decoration: "./icons /winter_pack/w_deco.png",
+        previous_button: "./icons/winter_pack/w_previous_button.png",
+        next_button: "./icons/winter_pack/w_next_button.png",
+        play_button: "./icons/winter_pack/w_play_button.png",
+        pause_button: "./icons/winter_pack/w_pause_button.png",
+        decoration: "./icons/winter_pack/w_deco.png",
         left_slider_color: "linear-gradient(to right, rgb(229, 244, 250) 0%, rgb(166, 205, 226) 42%, rgb(71, 138, 187) 100%)",
         right_slider_color: "linear-gradient(to right, rgb(71, 138, 187) 0%, rgb(166, 205, 226) 58%, rgb(229, 244, 250) 100%)",
         music_info_container_gradient_color: "linear-gradient(to bottom, rgba(202, 225, 241, 0.92) 0%, rgba(119, 171, 213, 0.96) 45%, rgba(77, 133, 184, 0.88) 80%, rgba(255, 255, 255, 0.6) 100%)",
@@ -356,130 +356,153 @@ const songs = [
 ];
 
 const mainContainer = document.querySelector("#main-container");
+const playPauseControl = document.querySelector("#play-pause-control");
+const playbackStatus = document.querySelector("#playback-status");
+const playlistDialog = document.querySelector("#playlist-dialog");
+const playlist = document.querySelector("#playlist");
 const audio = document.createElement("audio");
+audio.preload = "metadata";
+
 let currentSongIndex = 0;
+let isPlaybackRequested = false;
+let playbackRequestId = 0;
 
 function setPlayButtonState(isPlaying) {
     const song = songs[currentSongIndex];
-
-    playpauseButton[0].src = isPlaying ? song.play_button : song.pause_button;
+    playpauseButton[0].src = isPlaying ? song.pause_button : song.play_button;
     playpauseButton[0].dataset.buttonState = isPlaying ? "pause" : "play";
+    playPauseControl.setAttribute("aria-label", isPlaying ? "Pause" : "Play");
 }
 
-function playCurrentSong() {
+async function playCurrentSong() {
+    isPlaybackRequested = true;
+    const requestId = ++playbackRequestId;
+    playbackStatus.textContent = "";
     setPlayButtonState(true);
+    if (audio.error) audio.load();
 
-    const playPromise = audio.play();
-
-    if (playPromise) {
-        playPromise.catch(function() {
-            setPlayButtonState(false);
-        });
+    try {
+        await audio.play();
+        if (requestId === playbackRequestId) {
+            setPlayButtonState(!audio.paused);
+        }
+    } catch (error) {
+        // A previous track's rejected promise must not reset the current controls.
+        if (requestId !== playbackRequestId) return;
+        isPlaybackRequested = false;
+        setPlayButtonState(false);
+        playbackStatus.textContent = error.name === "NotAllowedError"
+            ? "Playback was blocked by your browser. Press Play to try again."
+            : "This song could not be played. Try Play again or choose another song from Menu.";
     }
 }
 
-function loadSong(forcePlay = false) {
+function loadSong(continuePlaying = isPlaybackRequested) {
     const song = songs[currentSongIndex];
-    const wasPlaying = forcePlay || !audio.paused;
+    ++playbackRequestId;
+    isPlaybackRequested = false;
+    audio.pause();
+    playbackStatus.textContent = "";
 
     mainContainer.dataset.season = song.season;
     document.body.dataset.season = song.season;
-
     background[0].src = song.background;
     coverPhoto[0].src = song.music_cover;
-    coverPhoto[0].alt = song.name;
+    coverPhoto[0].alt = `Cover artwork for ${song.name}`;
 
     musicInfoContainer[0].textContent = `${song.artist}${song.name}`;
     musicInfoContainer[0].style.background = song.music_info_container_gradient_color;
     musicInfoContainer[0].style.color = song.music_info_text_color;
     musicInfoContainer[0].style.borderColor = song.music_info_border_color;
-
     musicCoverFrame[0].style.borderColor = song.music_cover_border_color;
-
     controlsContainer[0].style.background = song.controls_container_gradient_color;
     controlsContainer[0].style.borderColor = song.controls_container_border_color;
-
     leftSlider[0].style.background = song.left_slider_color;
     rightSlider[0].style.background = song.right_slider_color;
-
     menuText[0].style.color = song.menu_text_color;
     menuText[0].style.webkitTextStroke = song.menu_webkit_stroke || "0 transparent";
-
-    playpauseButton[0].src = song.pause_button;
-    playpauseButton[0].dataset.playButton = song.pause_button;
-    playpauseButton[0].dataset.pauseButton = song.play_button;
-    playpauseButton[0].dataset.buttonState = "play";
-
     prevSongButton[0].src = song.previous_button;
     nextSongButton[0].src = song.next_button;
     decoration[0].src = song.decoration;
+    setPlayButtonState(false);
+
+    for (const [index, button] of [...playlist.querySelectorAll("button")].entries()) {
+        if (index === currentSongIndex) button.setAttribute("aria-current", "true");
+        else button.removeAttribute("aria-current");
+    }
 
     audio.src = song.audio;
-
-    if (wasPlaying) {
-        playCurrentSong();
-    }
-    else {
-        setPlayButtonState(false);
-    }
+    audio.load();
+    if (continuePlaying) playCurrentSong();
 }
 
-function goToPreviousSong() {
-    if (currentSongIndex === 0) {
-        currentSongIndex = songs.length - 1;
-    }
-    else {
-        currentSongIndex--;
-    }
+function showPreviousSong() {
+    currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+    loadSong();
 }
 
-function goToNextSong() {
-    if (currentSongIndex === songs.length - 1) {
-        currentSongIndex = 0;
-    }
-    else {
-        currentSongIndex++;
+function showNextSong() {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    loadSong();
+}
+
+function buildPlaylist() {
+    for (const [index, song] of songs.entries()) {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        const season = document.createElement("span");
+        button.type = "button";
+        button.append(`${song.artist}${song.name}`);
+        season.className = "playlist-season";
+        season.textContent = song.season;
+        button.append(season);
+        button.addEventListener("click", () => {
+            if (index !== currentSongIndex) {
+                currentSongIndex = index;
+                loadSong();
+            }
+            playlistDialog.close();
+        });
+        item.append(button);
+        playlist.append(item);
     }
 }
 
 if (mainContainer && songs.length > 0) {
+    buildPlaylist();
     loadSong();
-
-    function showPreviousSong() {
-        goToPreviousSong();
-        loadSong();
-    }
-
-    function showNextSong() {
-        goToNextSong();
-        loadSong();
-    }
-
     previousControlTop[0].addEventListener("click", showPreviousSong);
     nextControlTop[0].addEventListener("click", showNextSong);
-
-    prevSongButton[0].addEventListener("click", function(event) {
-        event.stopPropagation();
-        showPreviousSong();
-    });
-
-    nextSongButton[0].addEventListener("click", function(event) {
-        event.stopPropagation();
-        showNextSong();
-    });
-
-    playpauseButton[0].addEventListener("click", function() {
-        if (!audio.paused) {
+    playPauseControl.addEventListener("click", () => {
+        if (isPlaybackRequested) {
+            ++playbackRequestId;
+            isPlaybackRequested = false;
             audio.pause();
             setPlayButtonState(false);
-        }
-        else {
+        } else {
             playCurrentSong();
         }
     });
 
-    audio.addEventListener("ended", function() {
-        goToNextSong();
+    menuText[0].addEventListener("click", () => {
+        playlistDialog.showModal();
+        const currentButton = playlist.querySelector('[aria-current="true"]');
+        currentButton.focus({ preventScroll: true });
+        currentButton.scrollIntoView({ block: "nearest" });
+    });
+
+    audio.addEventListener("play", () => setPlayButtonState(!audio.paused));
+    audio.addEventListener("pause", () => {
+        if (!isPlaybackRequested) setPlayButtonState(false);
+    });
+    audio.addEventListener("error", () => {
+        ++playbackRequestId;
+        isPlaybackRequested = false;
+        setPlayButtonState(false);
+        playbackStatus.textContent = "This song could not be loaded. Choose another song from Menu or try Play again.";
+    });
+    audio.addEventListener("ended", () => {
+        currentSongIndex = (currentSongIndex + 1) % songs.length;
         loadSong(true);
     });
 }
