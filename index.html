@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Madie Music Player</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
+
+        <link rel = "stylesheet" href = "index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div id = "main-container">
+            <div
+                id="music-info-container"
+                class="music-info-container">
+            </div>
+
+            <div id="music-player" class="music-player">
+                <img id="music-background" class="music-background" alt="">
+
+                <div id="music-cover-container" class="music-cover-container">
+                    <div class="music-cover-frame">
+                        <img
+                            id="music-cover-photo"
+                            class="music-cover-photo"
+                            alt="">
+                    </div>
+                </div>
+
+                <div id="controls-container" class="controls-container">
+                    <div id="left-controls-side" class="left-controls-side">
+                        <div id="previous-control-top" class="previous-control-top">
+                            <img id="previous-song-button" class="previous-song-button" alt="">
+                        </div>
+                        <div id="controls-section-divider" class="controls-section-divider"></div>
+                        <div id="menu-control-bottom" class="menu-control-bottom">
+                            Menu
+                        </div>
+                    </div>
+
+                    <div id="controls-middle-section" class="controls-middle-section">
+                        <img
+                            id="pause-button"
+                            class="pause-button"
+                            data-button-state="play"
+                            alt="">
+                    </div>
+
+                    <div id="right-controls-side" class="right-controls-side">
+                        <div id="next-control-top" class="next-control-top">
+                            <img id="next-song-button" class="next-song-button" alt="">
+                        </div>
+                        <div id="right-controls-section-divider" class="right-controls-section-divider"></div>
+                        <div id="next-control-bottom" class="next-control-bottom">
+                            <img id="decoration" class="decoration" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src = "./songs/index.js"></script>
+    </body>
+</html>
