@@ -1,0 +1,18 @@
+{
+  "name": "madie-music-player",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A seasonal music player with UI design by Madie and frontend implementation by JustineVizco25.",
+  "scripts": {
+    "start": "http-server . -a 127.0.0.1 -p 4173 -c-1 --silent",
+    "check": "node --check songs/index.js",
+    "test": "playwright test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "http-server": "14.1.1"
+  }
+}
